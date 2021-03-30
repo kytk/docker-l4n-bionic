@@ -11,12 +11,12 @@ docker run -it -p 6080:80 --shm-size=1024m kytk/docker-l4n-bionic:latest
 
 ```
 
-- Now you are in the container. You run the script "vncsettings.sh" in the home directory. You need to specify resolution with the option -r. (If not set, the resolution would be 1280x800)
+- Now you are in the container. You run the script "vncsettings.sh" in the home directory. You can specify resolution with the argument. (If not set, the resolution would be 1280x800)
 
 - For example, if you want 1920x1080
 
 ```
-/home/brain/vncsetings.sh -r 1920x1080
+/home/brain/vncsetings.sh 1920x1080
 ```
 
 - The script asks passwords. You can enter any, but now we assume 'lin4neuro'
