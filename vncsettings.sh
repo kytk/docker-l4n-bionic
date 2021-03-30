@@ -1,11 +1,13 @@
 #!/bin/bash
 # A script to set vncserver and novnc
-# Usage: $0 -r <resolution>
+# Usage: $0 <resolution>
+# resolution should be something like 1920x1080
 
-RESOLUTION=$(getopt -q -o r -l resolution -- "$@")
-
-if [ ${RESOLUTION} = "" ]; then
+if [ $# -lt 1 ]; then
   RESOLUTION=1280x800
+else
+  RESOLUTION=$1
+
 fi
 
 USER=brain vncserver :1 -geometry ${RESOLUTION} -depth 24
