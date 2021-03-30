@@ -7,7 +7,7 @@
 - Enter the following command in the terminal
 
 ```
-docker run -it -p 6080:80 --shm-size=1024m docker-l4n-bionic:latest
+docker run -it -p 6080:80 --shm-size=1024m kytk/docker-l4n-bionic:latest
 
 ```
 
